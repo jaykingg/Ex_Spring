@@ -30,35 +30,61 @@ public class BoardMapperTests {
 	@Setter(onMethod_ = @Autowired)
 	private BoardMapper mapper;
 
-	@Test
-	public void testGetList() {
-
-		mapper.getList().forEach(board -> log.info(board));
-
-	}
+//	@Test
+//	public void testGetList() {
+//
+//		mapper.getList().forEach(board -> log.info(board));
+//
+//	}
+//	
+//	@Test
+//	public void testInsert() {
+//		BoardVO board = new BoardVO();
+//		board.setTitle("new title");
+//		board.setContent("new content");
+//		board.setWriter("jayas");
+//		
+//		mapper.insert(board);
+//		
+//		log.info(board);
+//	}
+//	
+//	@Test
+//	public void testInsertSelectKey() {
+//		BoardVO board = new BoardVO();
+//		board.setTitle("new title");
+//		board.setContent("new content");
+//		board.setWriter("jayas");
+//		
+//		mapper.insert(board);
+//		
+//		log.info(board);
+//	}
+	
+//	@Test
+//	public void testRead() {
+//		// test about object number existed.
+//		BoardVO board = mapper.read(5L);
+//		
+//		log.info(board);
+//	}
+//	
+//	@Test
+//	public void testDelete() {
+//		log.info("Delete COUNT : " + mapper.delete(21L));
+//	}
 	
 	@Test
-	public void testInsert() {
+	public void testUpdate() {
 		BoardVO board = new BoardVO();
-		board.setTitle("new title");
-		board.setContent("new content");
-		board.setWriter("jayas");
+		// check Bno number that whether existed or not
+		board.setBno(23L);
+		board.setTitle("modified title");
+		board.setContent("m/content");
+		board.setWriter("user99");
 		
-		mapper.insert(board);
-		
-		log.info(board);
-	}
-	
-	@Test
-	public void testInsertSelectKey() {
-		BoardVO board = new BoardVO();
-		board.setTitle("new title");
-		board.setContent("new content");
-		board.setWriter("jayas");
-		
-		mapper.insert(board);
-		
-		log.info(board);
+		int count = mapper.update(board);
+		log.info("UPDATE COUNT : " + count);
 	}
 	
 }
