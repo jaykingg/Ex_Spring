@@ -16,6 +16,7 @@ import lombok.extern.log4j.Log4j;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 @Log4j
+@Setter
 public class BoardServiceTests {
 	@Setter(onMethod_ = {@Autowired})
 	private BoardService service;
@@ -42,4 +43,7 @@ public class BoardServiceTests {
 	public void testGetList() {
 		service.getList().forEach(board -> log.info(board));
 	}
+	
+	@Test
+	
 }
