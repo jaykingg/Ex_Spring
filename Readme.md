@@ -1,13 +1,13 @@
 # Spring study.
 ## 코드로 배우는 Spring Web Project.
-<HR></HR>
+
 ## PULL ERROR
- 1. git 모두 동기화 했는데도 에러 -> git stash 이후 PULL.
-<HR></HR>
+ - git 모두 동기화 했는데도 에러 -> git stash 이후 PULL.
+
 ## Window <> MAC 상호 동기화.
- 1. Ojdbc 경로 때문에, 매번 설정해야했음. <P></P>
- 2. .gitignore 에 .project 추가하여 설정 미반영 되게끔 조치하면 됨.
-<HR></HR>
+ - Ojdbc 경로 때문에, 매번 설정해야했음. <P></P>
+ - .gitignore 에 .project 추가하여 설정 미반영 되게끔 조치하면 됨.
+
 ##  ORACLE on OSX
  - OSX에 ORACLE 설치 : DOCKER 이용. <BR></BR>
   1) DOCKER 설치.
@@ -20,11 +20,11 @@
  - ORACLE PORT CHECK QUERY : select dbms_xdb.gethttpport() from dual;
  - ORACLE PORT EXCHANGE QUERY(Tomcat port와 충돌) : exec dbms_xdb.sethttpport(변경할포트번호);
 <HR></HR>
-#### PROJECT ERROR
+## PROJECT ERROR
  - 대부분 ERROR는 오타.
-<HR></HR>
-#### ETC
+
+## ETC
  - CTRL + 클릭 : 따라가기
-<HR></HR>   
-### TEST
-<PRE><CODE> CODE TEST </CODE><PRE>
+
+## TEST
+ - <PRE><CODE> CODE TEST </CODE><PRE>
