@@ -35,6 +35,6 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="/Users/wisdomose/Desktop/EX_Spring/ojdbc8.jar"/>
+	<classpathentry kind="lib" path="C:/Users/wisdomose/Desktop/project/STS_workspace/SpringStep3/ojdbc8.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
