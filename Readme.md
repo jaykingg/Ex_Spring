@@ -19,12 +19,15 @@
  - ORACLE LOCALE ERROR : 환경설정, 지역 "타지역으로 바꿨다가" 다시 대한민국으로 설정.
  - ORACLE PORT CHECK QUERY : select dbms_xdb.gethttpport() from dual;
  - ORACLE PORT EXCHANGE QUERY(Tomcat port와 충돌) : exec dbms_xdb.sethttpport(변경할포트번호);
-<HR></HR>
+
 ## PROJECT ERROR
  - 대부분 ERROR는 오타.
 
 ## ETC
  - CTRL + 클릭 : 따라가기
+
+## Log4j UnderLine Error
+ - pom.xml 에서 logj4 search 후 <Exclusions> , <Scrop> 삭제하면 활성화됨.
 
 ## TEST
  - <PRE><CODE> CODE TEST </CODE><PRE>
