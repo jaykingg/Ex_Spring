@@ -22,9 +22,14 @@
 
 ## PROJECT ERROR
  - 대부분 ERROR는 오타.
+ - org.springframework.beans.factory.BeanCreationException: 
+ Error creating bean with name 'dataSource' defined in ServletContext resource [/WEB-INF/spring/root-context.xml]
+  : properties, Deploy Assembly 에서 ojdbc.jar 확인.
+ - 404 에러, 1. Tomcat에러 안나는지 확인. 2. Board/list.jsp -> 에러. Board/list -> 성공. [이유 모름..]
 
 ## ETC
  - CTRL + 클릭 : 따라가기
+ - Tomcat -> 각 환경 Load -> 사용자 URL호출 -> 해당 URL Mapping 되어있는 Controller 호출 -> View 호출
 
 ## Log4j UnderLine Error
  - pom.xml 에서 logj4 search 후 <Exclusions> , <Scrop> 삭제하면 활성화됨.

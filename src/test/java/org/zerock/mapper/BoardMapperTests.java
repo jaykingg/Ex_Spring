@@ -30,12 +30,12 @@ public class BoardMapperTests {
 	@Setter(onMethod_ = @Autowired)
 	private BoardMapper mapper;
 
-//	@Test
-//	public void testGetList() {
-//
-//		mapper.getList().forEach(board -> log.info(board));
-//
-//	}
+	@Test
+	public void testGetList() {
+
+		mapper.getList().forEach(row -> log.info(row));
+
+	}
 //	
 //	@Test
 //	public void testInsert() {
@@ -74,17 +74,17 @@ public class BoardMapperTests {
 //		log.info("Delete COUNT : " + mapper.delete(21L));
 //	}
 	
-	@Test
-	public void testUpdate() {
-		BoardVO board = new BoardVO();
-		// check Bno number that whether existed or not
-		board.setBno(23L);
-		board.setTitle("modified title");
-		board.setContent("m/content");
-		board.setWriter("user99");
-		
-		int count = mapper.update(board);
-		log.info("UPDATE COUNT : " + count);
-	}
+//	@Test
+//	public void testUpdate() {
+//		BoardVO board = new BoardVO();
+//		// check Bno number that whether existed or not
+//		board.setBno(23L);
+//		board.setTitle("modified title");
+//		board.setContent("m/content");
+//		board.setWriter("user99");
+//		
+//		int count = mapper.update(board);
+//		log.info("UPDATE COUNT : " + count);
+//	}
 	
 }

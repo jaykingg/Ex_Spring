@@ -39,10 +39,10 @@ public class BoardServiceTests {
 //		log.info("새로 작성 된 게시물의 번호 : " + board.getBno());
 //	}
 	
-//	@Test
-//	public void testGetList() {
-//		service.getList().forEach(board -> log.info(board));
-//	}
+	@Test
+	public void testGetList() {
+		service.getList().forEach(board -> log.info(board));
+	}
 	
 //	@Test
 //	public void testDelete() {

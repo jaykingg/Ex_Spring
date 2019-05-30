@@ -27,11 +27,10 @@ public class BoardController {
 	 */
 	
 	@GetMapping("/list")
-	public String list(Model model) {
+	public void list(Model model) {
 		log.info("list");
 		model.addAttribute("list", service.getList());
 		
-		return "/board/list";
 	}
 	
 	@PostMapping("/register")
