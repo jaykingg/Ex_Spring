@@ -27,11 +27,27 @@
 							<th>작성일</th>
 							<th>수정일</th>
 						</tr>
-					</thead>				
+					</thead>			
+					
+					<c:forEach items = "${list}" var = "board">
+					<tr>
+						<td><c:out value = "${board.bno}" /></td>
+						<td><c:out value = "${board.title}" /></td>
+						<td><c:out value = "${board.writer}" /></td>
+						<td><fmt:formatDate pattern = "yyyy-mm-dd" value = "${board.regdate}"/></td>
+						<td><fmt:formatDate pattern = "yyyy-mm-dd" value = "${board.updateDate}"/></td>
+					</tr>
+					</c:forEach>	
 				</table>
 			</div>
 		</div>
 	</div>
 </div>
+
+<script type = "text/javascript">
+	$(document).ready(function(){
+		var result = '<c:out value = "${result}"">'
+	});
+</script>
 
 <%@ include file ="../includes/footer.jsp" %>

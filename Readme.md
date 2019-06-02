@@ -26,6 +26,7 @@
  Error creating bean with name 'dataSource' defined in ServletContext resource [/WEB-INF/spring/root-context.xml]
   : properties, Deploy Assembly 에서 ojdbc.jar 확인.
  - 404 에러, 1. Tomcat에러 안나는지 확인. 2. Board/list.jsp -> 에러. Board/list -> 성공. [이유 모름..]
+  - 세팅 변경 시 에러 : deploy assembly 에서 ojdbc.jar 경로/maven jar 잘 잡혀있는지 확인 할 것. 
 
 ## ETC
  - CTRL + 클릭 : 따라가기

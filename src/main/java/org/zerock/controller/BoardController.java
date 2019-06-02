@@ -45,14 +45,19 @@ public class BoardController {
 		return "redirect:/board/list";
 	}
 	
-	
-	@GetMapping("/get")
-	/* bno의 명시적 처리  */
-	public void get(@RequestParam("bno") Long bno, Model model) {
-		log.info("/get");
-		model.addAttribute("board", service.get(bno));
+	@GetMapping("/register")
+	public void register() {
 		
 	}
+	
+	
+//	@GetMapping("/get")
+//	/* bno의 명시적 처리  */
+//	public void get(@RequestParam("bno") Long bno, Model model) {
+//		log.info("/get");
+//		model.addAttribute("board", service.get(bno));
+//		
+//	}
 	
 	/*/modify URL로 접근했을 때,함수 내용을 가지고 /board/list 로 리턴한다. */
 	@PostMapping("/modify")
