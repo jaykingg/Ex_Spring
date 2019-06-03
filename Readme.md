@@ -40,6 +40,11 @@
 
 ## Log4j UnderLine Error
  - pom.xml 에서 logj4 search 후 <Exclusions> , <Scrop> 삭제하면 활성화됨.
+ 
+## .gitignore 파일 적용하기.
+ -  git rm -r --cached .
+	git add .
+	git commit -m "Apply .gitignore"
 
 ## TEST
  - <PRE><CODE> CODE TEST </CODE><PRE>
