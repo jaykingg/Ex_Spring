@@ -7,6 +7,7 @@
 ## Window <> MAC 상호 동기화.
  - Ojdbc 경로 때문에, 매번 설정해야했음. <P></P>
  - .gitignore 에 .project 추가하여 설정 미반영 되게끔 조치하면 됨.
+ - .gitignore 에 .classpath 추가하여 설정 미반영 되게끔 조치하면 됨. -> ojdbc 등 경로 갖고있음.
 
 ##  ORACLE on OSX
  - OSX에 ORACLE 설치 : DOCKER 이용. <BR></BR>
@@ -26,7 +27,12 @@
  Error creating bean with name 'dataSource' defined in ServletContext resource [/WEB-INF/spring/root-context.xml]
   : properties, Deploy Assembly 에서 ojdbc.jar 확인.
  - 404 에러, 1. Tomcat에러 안나는지 확인. 2. Board/list.jsp -> 에러. Board/list -> 성공. [이유 모름..]
-  - 세팅 변경 시 에러 : deploy assembly 에서 ojdbc.jar 경로/maven jar 잘 잡혀있는지 확인 할 것. 
+ - 세팅 변경 시 에러 : deploy assembly 에서 ojdbc.jar 경로/maven jar 잘 잡혀있는지 확인 할 것. 
+ - java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException
+  : 서버 우클릭 후 clean 재 진행.
+ - Tomcat encountered : netstat -a -o -n 확인 후 taskkill /F /PID PID넘버 죽임
+   	                  : 서버 우클릭 후 clean 후 재 진행
+ - 
 
 ## ETC
  - CTRL + 클릭 : 따라가기
