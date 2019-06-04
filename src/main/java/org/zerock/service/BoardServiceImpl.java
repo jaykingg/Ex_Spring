@@ -15,7 +15,7 @@ import lombok.Setter;
 
 
 @Service 
-//@Log4j 
+@Log4j 
 public class BoardServiceImpl implements BoardService {
 
 	/* 
@@ -36,7 +36,10 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public BoardVO get(Long bno) {
 		// TODO Auto-generated method stub
-		return null;
+		log.info("get......" + bno);
+
+		return mapper.read(bno);
+
 	}
 
 	@Override
